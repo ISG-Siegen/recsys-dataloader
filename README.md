@@ -1,4 +1,9 @@
-This is a generic data loader for recommender system data sets.  
+# RecSys Data Loader
+
+---
+
+### This project was created to standardize data loading for [CaMeLS](https://github.com/ISG-Siegen/camels) but can also be used as a standalone data collection library.
+
 It currently supports loading and organizing data from 70 public explicit feedback data sets.  
 Changes to loaded data include mapping all user and item IDs to ascending integer values, changing ratings based on data set documentation files, and converting timestamps into unix format if possible.
 Only user, item, rating and timestamp columns are supported for now.
@@ -77,6 +82,7 @@ Below is a table showing various statistics about the data sets when processed w
 | Yahoo-music3                           |          365704 |       15400 |        1000 |          1   |            5 |    97.6253 |    nan           |   nan           |                  0.0730116 |
 | Yelp-yelp                              |         6990280 |     1987929 |      150346 |          1   |            5 |    99.9977 |      1.10852e+09 |     1.64262e+09 |                208.824     |
 
+## The following table contains additional information about the supported data sets that is mostly relevant for CaMeLS.
 
 |   MetadataID |         Hash |         NumUsers |         NumItems |     NumInstances |   Sparsity |      Density |   MinRating |   MaxRating |   MeanRating |   MedianRating |   ModeRating |   NormalizedMeanRating |   NormalizedMedianRating |   NormalizedModeRating |   UserItemRatio |   ItemUserRatio |   HighestNumRatingBySingleUser |   LowestNumRatingBySingleUser |   HighestNumRatingOnSingleItem |   LowestNumRatingOnSingleItem |   MeanNumRatingsByUser |   MeanNumRatingsOnItem |   RatingSkew |   RatingKurtosis |   RatingsStandardVariation |   RatingVariance |   RatingEntropy |   NumPossibleRatings |   RatingAverageIncrement |
 |-------------:|-------------:|-----------------:|-----------------:|-----------------:|-----------:|-------------:|------------:|------------:|-------------:|---------------:|-------------:|-----------------------:|-------------------------:|-----------------------:|----------------:|----------------:|-------------------------------:|------------------------------:|-------------------------------:|------------------------------:|-----------------------:|-----------------------:|-------------:|-----------------:|---------------------------:|-----------------:|----------------:|---------------------:|-------------------------:|
